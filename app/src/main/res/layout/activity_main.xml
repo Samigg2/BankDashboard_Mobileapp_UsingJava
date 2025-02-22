@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#2A2A2A">
+    <TextView
+        android:id="@+id/textDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:text="Bankdashboard"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="8dp"
+        android:layout_gravity="center">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="4dp"
+            android:backgroundTint="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <ImageView
+                    android:id="@+id/imageBank"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/baseline_account_balance_24" />
+                <TextView
+                    android:id="@+id/textBankTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Banking"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textBankDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="Check your bank activities"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="4dp"
+            android:backgroundTint="#ffffff">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+                <ImageView
+                    android:id="@+id/imageAdd"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/baseline_add_24" />
+                <TextView
+                    android:id="@+id/textAddTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:id="@+id/textAddDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add new data"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="4dp"
+            android:backgroundTint="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+                <ImageView
+                    android:id="@+id/imageShare"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/baseline_share_24" />
+                <TextView
+                    android:id="@+id/textShareTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:id="@+id/textShareDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share with others"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="4dp"
+            android:backgroundTint="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+                <ImageView
+                    android:id="@+id/imageLocation"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/baseline_location_on_24" />
+                <TextView
+                    android:id="@+id/textLocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:id="@+id/textLocationDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find nearby places"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</LinearLayout>
